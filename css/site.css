@@ -543,13 +543,20 @@ p, li, dd, summary, figcaption { text-wrap: pretty; }
 /* 운영실적: 4칸 숫자 + 기관 로고 흐름 */
 .numbers.n4 { grid-template-columns: repeat(4, 1fr); }
 @media (max-width: 900px) { .numbers.n4 { grid-template-columns: 1fr 1fr; } .numbers.n4 div { border-left: 0; padding: 22px 0; } }
-.clients { margin-top: 64px; padding-top: 32px; border-top: 1px solid rgba(255,255,255,.12); }
-.clients h3 { font-size: 1rem; margin-bottom: 20px; }
-.marquee { display: flex; overflow: hidden; gap: 14px; -webkit-mask-image: linear-gradient(90deg, transparent, #000 6%, #000 94%, transparent); mask-image: linear-gradient(90deg, transparent, #000 6%, #000 94%, transparent); }
-.marquee-track { list-style: none; display: flex; gap: 14px; flex: none; min-width: max-content; animation: marquee 70s linear infinite; }
+/* 협약·운영 기관 로고 흐름 — A안(기본): 밝은 띠, 원래 색 로고 */
+.clients-section { background: linear-gradient(180deg, #f3f7fc, #ffffff); padding: clamp(56px, 7vw, 88px) 0 clamp(56px, 7vw, 80px); border-bottom: 1px solid var(--line); }
+.clients-title { font-size: clamp(1.25rem, 2.2vw, 1.6rem); color: var(--ink); margin-bottom: clamp(28px, 4vw, 44px); }
+.marquee { display: flex; overflow: hidden; gap: 72px; -webkit-mask-image: linear-gradient(90deg, transparent, #000 8%, #000 92%, transparent); mask-image: linear-gradient(90deg, transparent, #000 8%, #000 92%, transparent); }
+.marquee-track { list-style: none; display: flex; align-items: center; gap: 72px; flex: none; min-width: max-content; animation: marquee 80s linear infinite; }
 .marquee:hover .marquee-track { animation-play-state: paused; }
-@keyframes marquee { from { transform: translateX(0); } to { transform: translateX(calc(-100% - 14px)); } }
-.client { display: inline-flex; align-items: center; gap: 12px; height: 64px; padding: 0 22px; background: #fff; border-radius: 12px; color: var(--ink); font-size: .92rem; font-weight: 600; white-space: nowrap; }
-.client img { height: 32px; width: auto; max-width: 150px; object-fit: contain; }
-.client.no-logo { padding: 0 24px; }
+@keyframes marquee { from { transform: translateX(0); } to { transform: translateX(calc(-100% - 72px)); } }
+.client { display: inline-flex; align-items: center; gap: 12px; height: 56px; white-space: nowrap; color: var(--muted); font-size: .9rem; font-weight: 600; }
+.client img { height: 40px; width: auto; max-width: 190px; object-fit: contain; }
+.client span { padding-left: 12px; border-left: 1px solid var(--line-strong); }
+/* 확정(B안): 남색 띠 + 흰색 단색 로고 */
+.clients-section { background: var(--band); border-bottom: 0; padding-top: 8px; }
+.clients-title { color: #fff; }
+.client { color: #c9d4e8; }
+.client img { filter: brightness(0) invert(1); opacity: .82; }
+.client span { border-left-color: rgba(255,255,255,.25); }
 @media (prefers-reduced-motion: reduce) { .marquee-track { animation: none; } .marquee { flex-wrap: wrap; -webkit-mask-image: none; mask-image: none; } .marquee-track[aria-hidden] { display: none; } .marquee-track { flex-wrap: wrap; min-width: 0; } }
