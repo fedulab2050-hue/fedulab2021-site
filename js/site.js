@@ -8,6 +8,14 @@
   }
   window.addEventListener('scroll', onScroll, { passive: true }); onScroll();
 
+  var topBtn = document.querySelector('[data-top]');
+  if (topBtn) topBtn.addEventListener('click', function (e) {
+    e.preventDefault();
+    var reduce = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    window.scrollTo({ top: 0, behavior: reduce ? 'auto' : 'smooth' });
+    var logo = document.querySelector('.brand'); if (logo) logo.focus({ preventScroll: true });
+  });
+
   var btn = document.querySelector('.menu-btn'), nav = document.getElementById('site-nav');
   if (!btn || !nav) return;
   function setOpen(open) {
