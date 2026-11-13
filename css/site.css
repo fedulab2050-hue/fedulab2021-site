@@ -497,7 +497,13 @@ p, li, dd, summary, figcaption { text-wrap: pretty; }
 .fab a.ask { background: var(--brand); color: #fff; border-color: var(--brand); }
 .fab a.ask:hover { background: var(--brand-strong); color: #fff; }
 .fab svg { width: 18px; height: 18px; flex: none; }
-@media (max-width: 640px) { .fab { display: none; } }
+@media (max-width: 640px) {
+  /* 휴대폰: 아래쪽 바 위에 동그란 '위로' 버튼만 표시 */
+  .fab { right: 14px; bottom: calc(78px + env(safe-area-inset-bottom)); }
+  .fab a:not(.top) { display: none; }
+  .fab a.top { width: 46px; height: 46px; min-height: 46px; padding: 0; border-radius: 50%; }
+  .fab a.top span { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); }
+}
 @media (prefers-reduced-motion: reduce) { .fab { transition: none; } }
 .fab a { width: 100%; }
 
