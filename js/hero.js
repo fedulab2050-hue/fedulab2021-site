@@ -5,6 +5,7 @@
   var canvas = document.querySelector('.hero-canvas');
   if (!canvas || !canvas.getContext) return;
   var ctx = canvas.getContext('2d');
+  var sub = canvas.getAttribute('data-variant') === 'sub';
   var reduce = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 
   // 결정적 난수(매번 같은 모양)
@@ -62,6 +63,12 @@
     dpr = Math.min(window.devicePixelRatio || 1, 2);
     canvas.width = Math.round(W * dpr); canvas.height = Math.round(H * dpr);
     ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+    if (sub) {
+      // 하위 페이지 상단: 기존 정적 그래픽과 같은 자리(오른쪽, 세로 가운데)
+      if (W < 720) { cx = W - 50; cy = H * 0.5; R = 150; alphaAll = 0.45; }
+      else { cx = W - 220; cy = H * 0.5; R = Math.min(215, H * 0.62); alphaAll = 0.95; }
+      return;
+    }
     if (W < 720) { cx = W * 0.88; cy = H * 0.17; R = Math.min(W * 0.5, 240); alphaAll = 0.55; }
     else if (W < 1080) { cx = W * 0.8; cy = H * 0.34; R = Math.min(H * 0.34, W * 0.3); alphaAll = 0.8; }
     else { cx = W * 0.765; cy = H * 0.43; R = Math.min(H * 0.4, W * 0.235); alphaAll = 1; }

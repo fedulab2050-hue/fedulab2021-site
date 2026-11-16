@@ -578,3 +578,6 @@ p, li, dd, summary, figcaption { text-wrap: pretty; }
 @media (max-width: 520px) { .sitemap-grid { grid-template-columns: 1fr; } }
 /* 플로팅 '위로' 버튼 */
 .fab a.top { background: rgba(255,255,255,.92); }
+
+/* 하위 페이지 상단 모션 그래픽 (정적 이미지 대신 캔버스) */
+.page-head.has-motion::after { display: none; }
