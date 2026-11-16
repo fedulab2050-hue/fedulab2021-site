@@ -387,6 +387,7 @@ legend { font-size: 1.15rem; font-weight: 700; color: var(--ink); margin-bottom:
   .nav.is-open .sub a { font-size: 1rem; color: var(--text); }
   .nav.is-open .cta a { margin: 20px 0 0; text-align: center; border-radius: 999px; border: 0; padding: 16px; }
   body.menu-open { overflow: hidden; }
+  body.menu-open .site-header { -webkit-backdrop-filter: none; backdrop-filter: none; background: #fff; }
 }
 @media (max-width: 900px) {
   .hero-tracks { grid-template-columns: 1fr 1fr; }
