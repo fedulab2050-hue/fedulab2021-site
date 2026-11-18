@@ -589,3 +589,8 @@ p, li, dd, summary, figcaption { text-wrap: pretty; }
 @media (max-width: 640px) { .photo-strip { grid-template-columns: 1fr 1fr; } .photo-strip figure:first-child { grid-column: 1 / -1; } }
 .photo-strip figure { margin: 0; }
 .photo-strip figcaption { margin-top: 10px; font-size: .875rem; color: var(--muted); }
+
+/* 트랙 사진 3장: 위 가로 1장 + 아래 2장 */
+.photo-trio { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; align-items: start; }
+.photo-trio .figure:first-child { grid-column: 1 / -1; }
+.photo-trio .figure:not(:first-child) img { aspect-ratio: 3 / 4; object-fit: cover; width: 100%; }
