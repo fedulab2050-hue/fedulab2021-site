@@ -621,3 +621,7 @@ p, li, dd, summary, figcaption { text-wrap: pretty; }
 .post-back { margin-top: 48px; }
 @media (max-width: 900px) { .gallery-grid { grid-template-columns: 1fr 1fr; } }
 @media (max-width: 480px) { .board-list a { flex-direction: column; gap: 4px; } }
+.post-head { display: flex; align-items: baseline; justify-content: space-between; gap: 16px; padding-bottom: 16px; margin-bottom: 28px; border-bottom: 1px solid var(--line); }
+.post-head .post-title { font-size: 1.25rem; font-weight: 600; letter-spacing: -0.01em; color: var(--ink); }
+.post-head time { flex: none; font-size: .9rem; color: var(--muted); font-variant-numeric: tabular-nums; }
+@media (max-width: 480px) { .post-head { flex-direction: column; gap: 6px; } }
