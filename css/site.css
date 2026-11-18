@@ -582,3 +582,8 @@ p, li, dd, summary, figcaption { text-wrap: pretty; }
 /* 하위 페이지 상단 모션 그래픽 (정적 이미지 대신 캔버스) */
 .page-head.has-motion::after { display: none; }
 .photo-pair.stack { grid-template-columns: 1fr; }
+
+/* 기업소개: 현장 사진 띠 */
+.photo-strip { display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; margin-top: clamp(40px, 6vw, 72px); }
+.photo-strip img { width: 100%; aspect-ratio: 4 / 3; object-fit: cover; border-radius: var(--radius); display: block; }
+@media (max-width: 640px) { .photo-strip { grid-template-columns: 1fr 1fr; } .photo-strip picture:first-child { grid-column: 1 / -1; } }
