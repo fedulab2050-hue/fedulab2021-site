@@ -586,4 +586,6 @@ p, li, dd, summary, figcaption { text-wrap: pretty; }
 /* 기업소개: 현장 사진 띠 */
 .photo-strip { display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; margin-top: clamp(40px, 6vw, 72px); }
 .photo-strip img { width: 100%; aspect-ratio: 4 / 3; object-fit: cover; border-radius: var(--radius); display: block; }
-@media (max-width: 640px) { .photo-strip { grid-template-columns: 1fr 1fr; } .photo-strip picture:first-child { grid-column: 1 / -1; } }
+@media (max-width: 640px) { .photo-strip { grid-template-columns: 1fr 1fr; } .photo-strip figure:first-child { grid-column: 1 / -1; } }
+.photo-strip figure { margin: 0; }
+.photo-strip figcaption { margin-top: 10px; font-size: .875rem; color: var(--muted); }
