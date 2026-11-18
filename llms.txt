@@ -16,7 +16,7 @@
 - [문화예술행사](https://fedulab2021.com/tracks/culture-events/): 축제·독서행사의 주제에 맞춰 방문객이 직접 만들어 가져가는 체험부스와 창의 문화예술 활동. 계절·도서·지역 주제로 활동을 바꿔 구성합니다.
 
 ## 주요 페이지
-- [프로그램 찾기](https://fedulab2021.com/programs/): 실제 운영 사례가 확인된 프로그램·활동 모듈 30개
+- [프로그램 찾기](https://fedulab2021.com/programs/): 실제 운영 사례가 확인된 프로그램·활동 모듈 31개
 - [운영사례](https://fedulab2021.com/cases/): 2026년 교육·체험부스 사례와 공식 블로그 후기 링크
 - [기업소개](https://fedulab2021.com/about/): 미션, 기관 정보, 연혁
 - [자주 묻는 질문](https://fedulab2021.com/faq/)
