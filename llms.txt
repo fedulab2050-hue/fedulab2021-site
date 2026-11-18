@@ -17,7 +17,7 @@
 
 ## 주요 페이지
 - [프로그램 찾기](https://fedulab2021.com/programs/): 실제 운영 사례가 확인된 프로그램·활동 모듈 40개
-- [운영사례](https://fedulab2021.com/cases/): 2026년 교육·체험부스 사례와 공식 블로그 후기 링크
+- [게시판](https://fedulab2021.com/board/): 공지사항과 교육 현장 갤러리
 - [기업소개](https://fedulab2021.com/about/): 미션, 기관 정보, 연혁
 - [자주 묻는 질문](https://fedulab2021.com/faq/)
 - [맞춤 상담문의](https://fedulab2021.com/contact/)
