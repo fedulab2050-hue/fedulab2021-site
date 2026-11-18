@@ -581,3 +581,4 @@ p, li, dd, summary, figcaption { text-wrap: pretty; }
 
 /* 하위 페이지 상단 모션 그래픽 (정적 이미지 대신 캔버스) */
 .page-head.has-motion::after { display: none; }
+.photo-pair.stack { grid-template-columns: 1fr; }
