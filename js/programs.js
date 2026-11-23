@@ -6,6 +6,7 @@
   var reset = document.getElementById('f-reset'), count = document.getElementById('f-count'), path = document.getElementById('f-path');
   var empty = document.getElementById('f-empty');
   if (!sT || !sA || !items.length) return;
+  var form = sA.form; if (form) form.addEventListener('submit', function (e) { e.preventDefault(); });
 
   // 트랙 이름(처음 HTML에 있던 순서 그대로)
   var trackNames = Array.prototype.slice.call(sT.options).filter(function (o) { return o.value; }).map(function (o) { return [o.value, o.text]; });
