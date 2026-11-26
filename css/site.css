@@ -638,3 +638,7 @@ p, li, dd, summary, figcaption { text-wrap: pretty; }
 .cert-consumer strong { margin-right: 8px; }
 @media (max-width: 640px) { .cert-table { font-size: .875rem; } .cert-table tbody th { width: auto; white-space: normal; } }
 .cert-table td.common { text-align: center; }
+.post-source { margin-top: 28px; font-size: .9rem; }
+.post-cover { margin: 0 0 32px; }
+.post-cover img { width: 100%; height: auto; border-radius: var(--radius); display: block; }
+.post-cover figcaption { margin-top: 8px; font-size: .875rem; color: var(--muted); }
