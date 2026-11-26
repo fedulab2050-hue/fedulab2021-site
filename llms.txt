@@ -14,9 +14,10 @@
 - [AI교육](https://fedulab2021.com/tracks/ai/): 생성형 AI로 콘텐츠를 직접 만들고 AI 윤리·저작권까지 함께 배우는 AI 리터러시 교육을 기관·대학·학교 대상에 맞춰 운영합니다.
 - [진로캠프](https://fedulab2021.com/tracks/career-camp/): 책과 과학, 미래직업을 연결하여 융합형 커리큘럼을 운영하는 참여형 프로그램. 전교 직업캠프부터 축제행사 기획 및 과학문화행사까지 운영합니다.
 - [문화예술행사](https://fedulab2021.com/tracks/culture-events/): 축제·독서행사의 주제에 맞춰 방문객이 직접 만들어 가져가는 체험부스와 창의 문화예술 활동. 계절·도서·지역 주제로 활동을 바꿔 구성합니다.
+- [자격증과정](https://fedulab2021.com/tracks/certification/): 생성형 AI 콘텐츠 제작과 스피치·프레젠테이션 역량을 등록민간자격으로 확인하는 자격증 과정입니다.
 
 ## 주요 페이지
-- [프로그램 찾기](https://fedulab2021.com/programs/): 실제 운영 사례가 확인된 프로그램·활동 모듈 40개
+- [프로그램 찾기](https://fedulab2021.com/programs/): 실제 운영 사례가 확인된 프로그램·활동 모듈 42개
 - [게시판](https://fedulab2021.com/board/): 공지사항과 교육 현장 갤러리
 - [기업소개](https://fedulab2021.com/about/): 미션, 기관 정보, 연혁
 - [자주 묻는 질문](https://fedulab2021.com/faq/)
